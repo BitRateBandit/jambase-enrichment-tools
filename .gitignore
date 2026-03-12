@@ -22,3 +22,6 @@ artifacts/
 
 # OS junk
 .DS_Store
+
+data/*
+!data/.keep
