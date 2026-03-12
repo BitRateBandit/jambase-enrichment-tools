@@ -27,3 +27,11 @@ cd jambase-enrichment-tools
 Install dependencies
 
 pip install -r requirements.txt
+
+## Configuration
+
+The script requires a JamBase API key.
+
+Set it as an environment variable:
+
+export JAMBASE_API_KEY=your_api_key_here
