@@ -4,9 +4,13 @@ import requests
 import pandas as pd
 from tqdm import tqdm
 import time
+from dotenv import load_dotenv
 import os
 
+load_dotenv()
 API_KEY = os.getenv("JAMBASE_API_KEY")
+
+
 
 if not API_KEY:
     raise ValueError("JAMBASE_API_KEY environment variable not set")

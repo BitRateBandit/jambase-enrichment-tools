@@ -10,3 +10,13 @@ run:
 
 clean:
 	rm -rf artifacts/* cache/*
+
+run-jambase-enrich:
+	@echo "Running JamBase Spotify enrichment..."
+	python scripts/jambase_spotify_enricher.py
+
+run-jambase-enrich:
+	@echo "Running JamBase enrichment..."
+	python scripts/jambase_spotify_enricher.py \
+		--input $(INPUT) \
+		--output $(OUTPUT)
