@@ -1,0 +1,10 @@
+{
+  "script": "example_task",
+  "timestamp_utc": "2026-02-10T06:42:55.383148",
+  "git_commit": "381ff26e8186402d87814c04800ac9797955798a",
+  "config": "configs/example.yaml",
+  "outputs": [
+    "artifacts/example_task/20260210T064255Z/output.json"
+  ],
+  "notes": "Example task run with caching enabled"
+}
