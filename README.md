@@ -1,11 +1,24 @@
-# Project Memory Template
+## JamBase Enrichment Tool
 
-## Purpose
-A recallable Python project structure designed to survive time away.
-Includes structured logging, retries, caching, and run manifests.
+scripts/jambase_spotify_enricher.py
 
-## Quickstart
-```bash
-make setup
-make run
+This utility enriches JamBase event IDs with external identifiers.
 
+Retrieved fields include:
+
+• Event name  
+• Artist name  
+• Spotify Artist ID  
+• MusicBrainz ID  
+• Ticketmaster ID  
+• Other external identifiers when available
+
+The script uses the JamBase API with:
+
+expandExternalIdentifiers=true
+
+### Usage
+
+export JAMBASE_API_KEY=your_key_here
+
+make run-jambase-enrich INPUT=data/events.xlsx OUTPUT=data/events_enriched.xlsx
