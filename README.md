@@ -17,8 +17,35 @@ The script uses the JamBase API with:
 
 expandExternalIdentifiers=true
 
-### Usage
+## Setup
 
-export JAMBASE_API_KEY=your_key_here
+Clone the repository
+
+git clone https://github.com/BitRateBandit/jambase-enrichment-tools.git
+cd jambase-enrichment-tools
+
+Install dependencies
+
+pip install -r requirements.txt
+
+## Configuration
+
+The script requires a JamBase API key.
+
+Set it as an environment variable:
+
+export JAMBASE_API_KEY=your_api_key_here
+
+## Usage
 
 make run-jambase-enrich INPUT=data/events.xlsx OUTPUT=data/events_enriched.xlsx
+
+Input file must contain a column named:
+
+JamBase Event ID
+
+Example:
+
+JamBase Event ID
+jambase:14958934
+jambase:15198969
