@@ -6,6 +6,8 @@ from tqdm import tqdm
 import time
 from dotenv import load_dotenv
 import os
+import argparse
+
 
 load_dotenv()
 API_KEY = os.getenv("JAMBASE_API_KEY")
@@ -15,8 +17,14 @@ API_KEY = os.getenv("JAMBASE_API_KEY")
 if not API_KEY:
     raise ValueError("JAMBASE_API_KEY environment variable not set")
 
-INPUT_XLSX = "/Users/saugat/Downloads/jambase_events_spotify_lookup.xlsx"
-OUTPUT_XLSX = "/Users/saugat/Downloads/jambase_events_with_spotify.xlsx"
+parser = argparse.ArgumentParser()
+parser.add_argument("--input", required=True)
+parser.add_argument("--output", required=True)
+
+args = parser.parse_args()
+
+INPUT_XLSX = args.input
+OUTPUT_XLSX = args.output
 
 BASE_URL = "https://www.jambase.com/jb-api/v1/events/id"
 
