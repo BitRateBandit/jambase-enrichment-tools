@@ -35,3 +35,17 @@ The script requires a JamBase API key.
 Set it as an environment variable:
 
 export JAMBASE_API_KEY=your_api_key_here
+
+## Usage
+
+make run-jambase-enrich INPUT=data/events.xlsx OUTPUT=data/events_enriched.xlsx
+
+Input file must contain a column named:
+
+JamBase Event ID
+
+Example:
+
+JamBase Event ID
+jambase:14958934
+jambase:15198969
