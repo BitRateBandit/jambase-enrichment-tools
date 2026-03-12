@@ -22,6 +22,7 @@ expandExternalIdentifiers=true
 Clone the repository
 
 git clone https://github.com/BitRateBandit/jambase-enrichment-tools.git
+
 cd jambase-enrichment-tools
 
 Install dependencies
